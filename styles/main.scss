@@ -1,0 +1,383 @@
+@import "./reset";
+@import "../assets/fonts/circe/stylesheet.css";
+
+$mainFontColor: #000;
+$supportFontColor: #fff;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 154px;
+
+  &__wrapper {
+    background-color: rgba(41, 41, 41, 0.55);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__nav {
+    align-items: center;
+    gap: 103px;
+  }
+
+  &__contacts {
+    font-family: Circe;
+    font-size: 25.766px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.288px;
+    color: #444;
+
+    border-radius: 25.766px;
+    border: 0.859px solid #f6f1f1;
+    background: #fff;
+
+    padding: 11px 55px;
+  }
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+
+  max-width: 1447px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  &__link {
+    font-family: Circe;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.25px;
+
+    color: $supportFontColor;
+  }
+}
+
+.banner {
+  &__wrapper {
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../assets/Main/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__text {
+    margin-top: 431px;
+    margin-left: 71px;
+  }
+
+  &__subheading {
+    font-family: Circe;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+
+    color: $supportFontColor;
+
+    max-width: 847px;
+  }
+}
+.work {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    font-family: Circe;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    color: $mainFontColor;
+
+    margin-top: 183px;
+
+    text-align: center;
+  }
+
+  &__example-block {
+    display: grid;
+    grid-template-columns: repeat(3, 445px);
+    column-gap: 3.5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+
+    margin-top: 65px;
+  }
+
+  &__example-item {
+    width: 100%;
+    max-width: 445px;
+    height: 284px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    &--bg1 {
+      background-image: url(../assets/example/ex-1.png);
+      background-repeat: no-repeat;
+    }
+    &--bg2 {
+      background-image: url(../assets/example/ex-2.png);
+      background-repeat: no-repeat;
+    }
+    &--bg3 {
+      background-image: url(../assets/example/ex-3.png);
+      background-repeat: no-repeat;
+    }
+    &--bg4 {
+      background-image: url(../assets/example/ex-4.png);
+      background-repeat: no-repeat;
+    }
+    &--bg5 {
+      background-image: url(../assets/example/ex-5.png);
+      background-repeat: no-repeat;
+    }
+    &--bg6 {
+      background-image: url(../assets/example/ex-6.png);
+      background-repeat: no-repeat;
+    }
+    &--bg7 {
+      background-image: url(../assets/example/ex-7.png);
+      background-repeat: no-repeat;
+    }
+    &--bg8 {
+      background-image: url(../assets/example/ex-8.png);
+      background-repeat: no-repeat;
+    }
+    &--bg9 {
+      background-image: url(../assets/example/ex-9.png);
+      background-repeat: no-repeat;
+    }
+    &--bg10 {
+      background-image: url(../assets/example/ex-10.png);
+      background-repeat: no-repeat;
+    }
+    &--bg11 {
+      background-image: url(../assets/example/ex-11.png);
+      background-repeat: no-repeat;
+    }
+    &--bg12 {
+      background-image: url(../assets/example/ex-12.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__example-text {
+    font-family: Circe;
+    font-size: 32.936px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    color: $supportFontColor;
+
+    padding: 36px 28px;
+  }
+}
+
+.aboutus {
+  &__subheading {
+    font-family: Circe;
+    font-size: 32.936px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    color: $mainFontColor;
+    text-align: center;
+
+    margin-top: 67px;
+  }
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    margin-top: 65px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 562px;
+    height: 316px;
+
+    &--1 {
+      background-image: url(../assets/about-us/Rectangle\ 20.png);
+      background-repeat: no-repeat;
+    }
+
+    &--2 {
+      background-image: url(../assets/about-us/Rectangle\ 21.png);
+      background-repeat: no-repeat;
+    }
+
+    &--3 {
+      background-image: url(../assets/about-us/Rectangle\ 22.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text {
+    font-family: Circe;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $mainFontColor;
+    max-width: 482px;
+  }
+}
+
+.price {
+  &__wrapper {
+  }
+
+  &__subheading {
+    font-family: Circe;
+    font-size: 32.936px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    color: $mainFontColor;
+
+    text-align: center;
+
+    margin-top: 150px;
+  }
+
+  &__row {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 30px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 430px);
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+
+    margin-top: 25px;
+  }
+
+  &__row-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+  }
+
+  &__row-text {
+    font-family: Circe;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 380px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    border: 1px solid grey;
+    border-radius: 20px;
+
+    padding: 25px;
+  }
+
+  &__item-main {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__item-text {
+    font-family: Circe;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-bottom: 20px;
+  }
+
+  &__item-price {
+    list-style: disc;
+
+    font-family: Circe;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__item-bg {
+    width: 170px;
+    height: 170px;
+    background-image: url(../assets/price/интервью.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 50%;
+  }
+
+  &__item-main {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+}
