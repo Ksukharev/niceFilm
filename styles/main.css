@@ -443,4 +443,149 @@ a {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+}
+
+.process__subheading {
+  font-family: Circe;
+  font-size: 43.364px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-top: 94px;
+  color: #000;
+}
+.process__block {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  margin-top: 55px;
+}
+.process__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.process__item:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.process__bg {
+  width: 100%;
+  height: 536px;
+  max-width: 720px;
+}
+.process__bg--1 {
+  background-image: url(../assets/process/process1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.process__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.process__step {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.process__step-item {
+  width: 72px;
+  height: 72px;
+  background-color: rgb(217, 217, 217);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Circe;
+  font-size: 25.766px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: #000;
+}
+.process__step-text {
+  font-family: Circe;
+  font-size: 25.766px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__subheading {
+  font-family: Circe;
+  font-size: 32.936px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  margin-top: 92px;
+  color: #000;
+}
+.contacts__all {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 90px;
+}
+.contacts__mail {
+  font-family: Circe;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+}
+.contacts__tel {
+  font-family: Circe;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+  color: #000;
+}
+.contacts__social {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.footer {
+  margin-top: 240px;
+}
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 71px;
+}
+.footer__text {
+  font-family: Circe;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+.footer__text--margin {
+  margin-right: 126px;
+}
+.footer__text-brand {
+  font-family: Circe;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

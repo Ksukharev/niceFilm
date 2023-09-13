@@ -381,3 +381,192 @@ $supportFontColor: #fff;
     align-self: flex-start;
   }
 }
+
+.process {
+  &__wrapper {
+  }
+
+  &__subheading {
+    font-family: Circe;
+    font-size: 43.364px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+
+    margin-top: 94px;
+
+    color: $mainFontColor;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    gap: 55px;
+
+    margin-top: 55px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    height: 536px;
+    max-width: 720px;
+
+    &--1 {
+      background-image: url(../assets/process/process1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__step-item {
+    width: 72px;
+    height: 72px;
+
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Circe;
+    font-size: 25.766px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    color: #000;
+  }
+
+  &__step-text {
+    font-family: Circe;
+    font-size: 25.766px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    color: $mainFontColor;
+  }
+}
+
+.contacts {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subheading {
+    font-family: Circe;
+    font-size: 32.936px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    text-align: center;
+
+    margin-top: 92px;
+
+    color: $mainFontColor;
+  }
+
+  &__all {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    width: 100%;
+    max-width: 1000px;
+
+    margin-top: 90px;
+  }
+
+  &__mail {
+    font-family: Circe;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    color: $mainFontColor;
+  }
+
+  &__tel {
+    font-family: Circe;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+
+    color: $mainFontColor;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    gap: 70px;
+  }
+}
+
+.footer {
+  margin-top: 240px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 71px;
+  }
+
+  &__text {
+    font-family: Circe;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    color: $mainFontColor;
+
+    &--margin {
+      margin-right: 126px;
+    }
+  }
+
+  &__text-brand {
+    font-family: Circe;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    color: $mainFontColor;
+  }
+}
+.wrapper {
+}
