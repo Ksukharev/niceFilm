@@ -72,9 +72,6 @@ $supportFontColor: #fff;
 }
 
 .banner {
-  &__wrapper {
-  }
-
   &__img {
     width: 100%;
     height: 100%;
@@ -82,7 +79,7 @@ $supportFontColor: #fff;
     background-image: url(../assets/Main/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
 
     position: absolute;
     top: 0;
@@ -124,14 +121,16 @@ $supportFontColor: #fff;
 
     color: $mainFontColor;
 
-    margin-top: 183px;
+    margin-top: 7.5em;
 
     text-align: center;
   }
 
   &__example-block {
     display: grid;
-    grid-template-columns: repeat(3, 445px);
+    // было исправление
+    // grid-template-columns: repeat(3, 445px);
+    grid-template-columns: repeat(3, minmax(200px, 445px));
     column-gap: 3.5px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 5px;
@@ -273,9 +272,6 @@ $supportFontColor: #fff;
 }
 
 .price {
-  &__wrapper {
-  }
-
   &__subheading {
     font-family: Circe;
     font-size: 32.936px;
@@ -302,9 +298,9 @@ $supportFontColor: #fff;
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(2, 430px);
-    grid-gap: 10px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
 
     margin-top: 25px;
@@ -328,16 +324,57 @@ $supportFontColor: #fff;
 
   &__item {
     width: 100%;
-    max-width: 380px;
-    height: 180px;
+    max-width: 307px;
+    height: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
 
     border: 1px solid grey;
     border-radius: 20px;
 
     padding: 25px;
+
+    &--bg1 {
+      background-image: url(../assets/price/интервью.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--bg2 {
+      background-image: url(../assets/price/фашин.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--bg3 {
+      background-image: url(../assets/price/свадьба.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--bg4 {
+      background-image: url(../assets/price/обучение.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--bg5 {
+      background-image: url(../assets/price/реклама.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--bg6 {
+      background-image: url(../assets/price/обучение.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--bg7 {
+      background-image: url(../assets/price/еда.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--bg8 {
+      background-image: url(../assets/price/рилз.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   &__item-main {
@@ -353,6 +390,7 @@ $supportFontColor: #fff;
     line-height: normal;
 
     margin-bottom: 20px;
+    color: $supportFontColor;
   }
 
   &__item-price {
@@ -365,16 +403,6 @@ $supportFontColor: #fff;
     line-height: normal;
   }
 
-  &__item-bg {
-    width: 170px;
-    height: 170px;
-    background-image: url(../assets/price/интервью.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    border-radius: 50%;
-  }
-
   &__item-main {
     display: flex;
     flex-direction: column;
@@ -383,9 +411,6 @@ $supportFontColor: #fff;
 }
 
 .process {
-  &__wrapper {
-  }
-
   &__subheading {
     font-family: Circe;
     font-size: 43.364px;
@@ -428,6 +453,12 @@ $supportFontColor: #fff;
       background-repeat: no-repeat;
       background-size: cover;
     }
+
+    &--2 {
+      background-image: url(../assets/process/process2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   &__steps {
@@ -463,6 +494,8 @@ $supportFontColor: #fff;
   }
 
   &__step-text {
+    max-width: 500px;
+
     font-family: Circe;
     font-size: 25.766px;
     font-style: normal;
@@ -568,5 +601,5 @@ $supportFontColor: #fff;
     color: $mainFontColor;
   }
 }
-.wrapper {
-}
+
+@import "./media";

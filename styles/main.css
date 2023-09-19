@@ -203,7 +203,7 @@ a {
   background-image: url(../assets/Main/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -236,12 +236,12 @@ a {
   font-weight: 800;
   line-height: normal;
   color: #000;
-  margin-top: 183px;
+  margin-top: 7.5em;
   text-align: center;
 }
 .work__example-block {
   display: grid;
-  grid-template-columns: repeat(3, 445px);
+  grid-template-columns: repeat(3, minmax(200px, 445px));
   -moz-column-gap: 3.5px;
        column-gap: 3.5px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -381,9 +381,9 @@ a {
 }
 .price__grid {
   display: grid;
-  grid-template-columns: repeat(2, 430px);
-  grid-gap: 10px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   margin-top: 25px;
 }
@@ -402,14 +402,54 @@ a {
 }
 .price__item {
   width: 100%;
-  max-width: 380px;
-  height: 180px;
+  max-width: 307px;
+  height: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
   border: 1px solid grey;
   border-radius: 20px;
   padding: 25px;
+}
+.price__item--bg1 {
+  background-image: url(../assets/price/интервью.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price__item--bg2 {
+  background-image: url(../assets/price/фашин.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price__item--bg3 {
+  background-image: url(../assets/price/свадьба.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price__item--bg4 {
+  background-image: url(../assets/price/обучение.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price__item--bg5 {
+  background-image: url(../assets/price/реклама.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price__item--bg6 {
+  background-image: url(../assets/price/обучение.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price__item--bg7 {
+  background-image: url(../assets/price/еда.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price__item--bg8 {
+  background-image: url(../assets/price/рилз.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .price__item-main {
   display: flex;
@@ -422,6 +462,7 @@ a {
   font-weight: 600;
   line-height: normal;
   margin-bottom: 20px;
+  color: #fff;
 }
 .price__item-price {
   list-style: disc;
@@ -430,14 +471,6 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-.price__item-bg {
-  width: 170px;
-  height: 170px;
-  background-image: url(../assets/price/интервью.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
 }
 .price__item-main {
   display: flex;
@@ -479,6 +512,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.process__bg--2 {
+  background-image: url(../assets/process/process2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .process__steps {
   display: flex;
   flex-direction: column;
@@ -505,6 +543,7 @@ a {
   color: #000;
 }
 .process__step-text {
+  max-width: 500px;
   font-family: Circe;
   font-size: 25.766px;
   font-style: normal;
