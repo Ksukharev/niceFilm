@@ -1,2 +1,16 @@
-@media (max-width: 1433px) {
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1132px) {
+  .header {
+    &__nav {
+      gap: 50px;
+    }
+
+    &__contacts {
+      font-size: 22px;
+
+      padding: 7px 37px;
+    }
+  }
 }
