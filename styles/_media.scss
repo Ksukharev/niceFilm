@@ -17,3 +17,11 @@
     }
   }
 }
+
+@media (max-width: 1074px) {
+  .price {
+    &__img {
+      width: 100px;
+    }
+  }
+}
