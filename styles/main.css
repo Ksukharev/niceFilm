@@ -150,7 +150,7 @@ a {
 
 .header {
   width: 100%;
-  height: 154px;
+  height: 90px;
   background-color: rgba(41, 41, 41, 0.55);
   position: fixed;
   top: 0;
@@ -166,7 +166,7 @@ a {
 }
 .header__contacts {
   font-family: Circe;
-  font-size: 25.766px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -175,7 +175,7 @@ a {
   border-radius: 25.766px;
   border: 0.859px solid #f6f1f1;
   background: #fff;
-  padding: 11px 55px;
+  padding: 3px 28px;
 }
 
 .wrapper {
@@ -191,7 +191,7 @@ a {
 }
 .nav__link {
   font-family: Circe;
-  font-size: 25px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -444,6 +444,14 @@ a {
   align-self: flex-start;
 }
 
+.process {
+  width: 100%;
+}
+.process__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .process__subheading {
   font-family: Circe;
   font-size: 43.364px;
@@ -454,47 +462,36 @@ a {
   margin-top: 94px;
   color: #000;
 }
-.process__block {
-  display: flex;
-  flex-direction: column;
-  gap: 55px;
-  margin-top: 55px;
-}
 .process__item {
+  width: 100%;
+  max-width: 750px;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-}
-.process__item:nth-child(2) {
-  flex-direction: row-reverse;
-}
-.process__bg {
-  width: 100%;
-  height: 536px;
-  max-width: 720px;
-}
-.process__bg--1 {
-  background-image: url(../assets/process/process1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.process__bg--2 {
-  background-image: url(../assets/process/process2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.process__steps {
-  display: flex;
   flex-direction: column;
-  gap: 70px;
+  margin-top: 55px;
+}
+.process__item :nth-child(even) {
+  justify-content: flex-end;
 }
 .process__step {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.process__step-row {
+  width: 100%;
+  max-width: 350px;
   display: flex;
   align-items: center;
   gap: 20px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 50px;
+  padding: 5px 8px;
 }
 .process__step-item {
-  width: 72px;
+  width: 100%;
+  max-width: 72px;
   height: 72px;
   background-color: rgb(217, 217, 217);
   border-radius: 50%;
@@ -502,7 +499,7 @@ a {
   align-items: center;
   justify-content: center;
   font-family: Circe;
-  font-size: 25.766px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -511,10 +508,11 @@ a {
 .process__step-text {
   max-width: 500px;
   font-family: Circe;
-  font-size: 25.766px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
   color: #000;
 }
 
